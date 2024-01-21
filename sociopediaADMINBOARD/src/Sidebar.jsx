@@ -13,7 +13,7 @@ const MainContent = ({ activeButton }) => {
         <div>
           <p>Content for {activeButton}</p>
           {activeButton === 'adverts' && <AdvertsContent />}
-          {activeButton === 'category' && <CategoryContent />}
+          {activeButton === 'categories' && <CategoryContent />}
         </div>
       )}
     </div>
@@ -25,7 +25,14 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 
   const handleButtonClick = (buttonName, e) => {
     e.preventDefault();
-    setActiveButton(buttonName);
+
+    if (buttonName === 'adverts' || buttonName === 'categories') {
+      // Open a new window or tab for the "Adverts" and "Categories" sections
+      window.open(`/${buttonName}`, '_blank');
+    } else {
+      // Set the active button for other sections
+      setActiveButton(buttonName);
+    }
   };
 
   return (

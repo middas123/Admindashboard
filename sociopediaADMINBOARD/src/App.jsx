@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Home from './Home';
+import AdvertsContent from './AdvertsContent';
+import CategoryContent from './CategoryContent';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
