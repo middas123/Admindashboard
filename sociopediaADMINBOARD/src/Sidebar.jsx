@@ -3,21 +3,23 @@ import {
   BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill,
   BsListCheck, BsMenuButtonWideFill, BsFillGearFill
 } from 'react-icons/bs';
-// eslint-disable-next-line no-unused-vars
 import AdvertsContent from './AdvertsContent';
+import CategoryContent from './CategoryContent';
 
-// Main content component
 const MainContent = ({ activeButton }) => {
-  // Add logic to render content based on the active button
   return (
     <div>
-      {activeButton && <p>Content for {activeButton}</p>}
-      {/* Add more content based on the active button */}
+      {activeButton && (
+        <div>
+          <p>Content for {activeButton}</p>
+          {activeButton === 'adverts' && <AdvertsContent />}
+          {activeButton === 'category' && <CategoryContent />}
+        </div>
+      )}
     </div>
   );
 };
 
-// Sidebar component
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const [activeButton, setActiveButton] = useState(null);
 
