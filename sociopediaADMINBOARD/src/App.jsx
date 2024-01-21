@@ -6,6 +6,7 @@ import Home from './Home';
 import AdvertsContent from './AdvertsContent';
 import CategoryContent from './CategoryContent';
 
+
 const App = () => {
   // Define dummy values for showAdverts and showCategories
   const showAdverts = true;
@@ -16,7 +17,7 @@ const App = () => {
       <Header />
       <Sidebar />
       <Home />
-      {/* Render AdvertsContent and CategoryContent conditionally based on your logic */}
+      {/* Render AdvertsContent and CategoryContent conditionally based on logic */}
       {showAdverts && <AdvertsContent />}
       {showCategories && <CategoryContent />}
     </div>
