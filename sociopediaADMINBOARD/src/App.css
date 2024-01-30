@@ -106,7 +106,7 @@ body {
   display: inline !important;
   position: absolute;
   /*
-    we want the z-index of the sidebar higher so that
+    i made  the z-index of the sidebar higher so that
     the charts are not showing over the sidebar 
     on small screens
   */
