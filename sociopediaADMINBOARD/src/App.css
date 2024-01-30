@@ -90,19 +90,23 @@ body {
 .sidebar-list-item {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
+  background-color: #8a05c71e; /* Set the default background color */
   transition: background-color 0.3s ease-in-out; /* Added transition for smoother effect */
 }
 
 .sidebar-list-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #f9f871; /* Change to the desired hover color (I yellow in this case) */
   cursor: pointer;
   transform: scale(1.05); /* Optional: Adds a slight scale effect on hover */
 }
 
+.sidebar-list-item.active {
+  background-color: #f9f871; /* Change the color to your desired color for the selected item */
+}
 
 .sidebar-list-item > a {
   text-decoration: none;
-  color: #0bdd27;
+  color: #fff; /* Set the default text color */
 }
 
 .sidebar-responsive {
