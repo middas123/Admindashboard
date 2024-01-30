@@ -1,24 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1d2634;
+  background-color: #1d2f34;
   color: #9e9ea4;
   font-family: 'Montserrat', sans-serif;
 }
 
-.icon {
-  vertical-align: middle;
-  line-height: 1px;
-  font-size: 20px;
-}
+.icon,
 .icon_header {
   vertical-align: middle;
   line-height: 1px;
+  font-size: 20px;
+  color: #00ce0a;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Added transition for smoother effect */
+}
+
+.icon_header {
   font-size: 26px;
 }
-.icon, .icon_header {
-  margin-right: 5px;
-  cursor: pointer; 
+
+.icon:hover,
+.icon_header:hover {
+  transform: scale(1.2); /* Increase the size on hover (adjust as needed) */
 }
 
 .close_icon {
@@ -27,6 +32,11 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
+
+.close_icon:hover {
+  transform: scale(1.2); /* Increase the size on hover (adjust as needed) */
+}
+
 
 .grid-container {
   display: grid;
@@ -95,7 +105,7 @@ body {
 }
 
 .sidebar-list-item:hover {
-  background-color: #f9f871; /* Change to the desired hover color (I yellow in this case) */
+  background-color: #f971db; /* Change to the desired hover color (I yellow in this case) */
   cursor: pointer;
   transform: scale(1.05); /* Optional: Adds a slight scale effect on hover */
 }
