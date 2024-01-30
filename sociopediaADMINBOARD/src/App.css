@@ -90,16 +90,19 @@ body {
 .sidebar-list-item {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
+  transition: background-color 0.3s ease-in-out; /* Added transition for smoother effect */
 }
 
 .sidebar-list-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  transform: scale(1.05); /* Optional: Adds a slight scale effect on hover */
 }
+
 
 .sidebar-list-item > a {
   text-decoration: none;
-  color: #9e9ea4;
+  color: #0bdd27;
 }
 
 .sidebar-responsive {
