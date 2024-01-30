@@ -6,7 +6,6 @@ import Home from './Home';
 import AdvertsContent from './AdvertsContent';
 import CategoryContent from './CategoryContent';
 
-
 const App = () => {
   // Define dummy values for showAdverts and showCategories
   const showAdverts = true;
