@@ -21,6 +21,6 @@ const App = () => {
       {showCategories && <CategoryContent />}
     </div>
   );
-}
+};
 
 export default App;
