@@ -39,7 +39,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
-          <BsCart3 className='icon_header' /> SOCIOPEDIA
+         SOCIOPEDIA
         </div>
         <span className='icon close_icon' onClick={OpenSidebar}>X</span>
       </div>
@@ -65,11 +65,11 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             <BsPeopleFill className='icon' /> Users
           </a>
         </li>
-        <li className={`sidebar-list-item ${activeButton === 'inventory' ? 'active' : ''}`}>
+        {/* <li className={`sidebar-list-item ${activeButton === 'inventory' ? 'active' : ''}`}>
           <a href="#" onClick={(e) => handleButtonClick('inventory', e)}>
             <BsListCheck className='icon' /> Inventory
           </a>
-        </li>
+        </li> */}
         <li className={`sidebar-list-item ${activeButton === 'reports' ? 'active' : ''}`}>
           <a href="#" onClick={(e) => handleButtonClick('reports', e)}>
             <BsMenuButtonWideFill className='icon' /> Reports
