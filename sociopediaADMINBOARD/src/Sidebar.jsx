@@ -77,7 +77,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
         </li>
         <li className={`sidebar-list-item ${activeButton === 'settings' ? 'active' : ''}`}>
           <a href="#" onClick={(e) => handleButtonClick('settings', e)}>
-            <BsFillGearFill className='icon' /> Settings
+            <BsFillGearFill className='icon' /> 
           </a>
         </li>
       </ul>
