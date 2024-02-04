@@ -57,7 +57,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
         </li>
         <li className={`sidebar-list-item ${activeButton === 'categories' ? 'active' : ''}`}>
           <a href="#" onClick={(e) => handleButtonClick('categories', e)}>
-            <BsFillGrid3X3GapFill className='icon' /> 
+            <BsFillGrid3X3GapFill className='icon' /> Categories
           </a>
         </li>
         <li className={`sidebar-list-item ${activeButton === 'users' ? 'active' : ''}`}>
