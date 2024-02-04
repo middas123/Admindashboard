@@ -62,7 +62,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
         </li>
         <li className={`sidebar-list-item ${activeButton === 'users' ? 'active' : ''}`}>
           <a href="#" onClick={(e) => handleButtonClick('users', e)}>
-            <BsPeopleFill className='icon' /> Users
+            <BsPeopleFill className='icon' /> 
           </a>
         </li>
         {/* <li className={`sidebar-list-item ${activeButton === 'inventory' ? 'active' : ''}`}>
